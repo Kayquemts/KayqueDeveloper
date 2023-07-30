@@ -17,3 +17,9 @@ button2.addEventListener('click', (e) => {
     setTimeout(() => { document.querySelectorAll('span').forEach((element) => { element.classList.remove('expanded') }) }, 1700)
 });
 
+
+const menu = document.querySelector('.menu-responsivo');
+menu.addEventListener('click', (e) => {
+    console.log("DEU bom");
+    const nav = document.querySelector('.navegacao').classList.toggle('active');
+})

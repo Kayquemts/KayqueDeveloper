@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body, html{
     padding: 0;
     margin: 0;
@@ -12,19 +16,26 @@ body, html{
 header{
     position: fixed;
     display: flex;
+    align-items: center;
     width: 100vmax;
     height: 5rem;
     background-color: #1f1f1f;
     justify-content: space-between;
     border-bottom: 1px solid #353535;
+    z-index: 2;
 }
 .navegacao{
+    list-style: none;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #272727;
     margin-right: 2rem;
 }
-.navegacao a{
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.navegacao li{
     align-items: center;
     text-decoration: none;
     font-size: 20px;
@@ -32,6 +43,11 @@ header{
     margin: 0 15px;
     text-transform: uppercase;
     position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .navegacao a::after{
     content: "";
@@ -54,7 +70,7 @@ header{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    padding: 11% 0%;
+    padding: 12% 0%;
     overflow-x: hidden;
 }
 .container-inico{

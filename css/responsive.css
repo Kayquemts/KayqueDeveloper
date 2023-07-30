@@ -1,0 +1,111 @@
+.menu-responsivo div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.menu-responsivo{
+    cursor: pointer;
+    display: none;
+    right: 0;
+}
+@media (max-width: 414px) {
+    .inicio{
+        display: unset;
+    }
+    body{
+        overflow-x: unset;
+    }
+    .container-inico{
+        display: unset;
+    }
+    #texto-apresentacao{
+        margin: 65% 0;
+        text-align: center;
+        width: 100%;
+    }
+    #nome{
+        font-size: 45px;
+    }
+    #img-apresentacao{
+        display: none;
+    }
+    header{
+        width: 100%;
+    }/*
+    .navegacao{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: #1f1f1f;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }*/
+    .navegacao li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .menu-responsivo{
+        display: block;
+    }
+    .active{
+        transform: translateX(0);
+    }
+    .container-scroll{
+        width: unset;
+        margin-top: 20%;
+    }
+    #apresentacao{
+        width: unset;
+    }
+    nav{
+        display: none;
+    }
+    @keyframes typing{
+        from{
+            width: 0;
+        }to{
+            width: 400px;
+        }
+    }
+
+
+    .sobre-mim{
+        width: 100%;
+    }
+    .container-sobre-mim{
+        width: 100%;
+        display: unset;
+    }
+    #img-sobre-mim{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #texto-sobre-mim{
+        width: 100%;
+        margin: 2px;
+        text-align: center;
+    }
+    #texto-sobre-mim p{
+        font-size: 20px;
+    }
+    #botoes{
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: unset;
+    }
+    .contato{
+        margin: unset;
+    }
+    h1{
+        font-size: 60px;
+    }
+}
+/*video youtube*/

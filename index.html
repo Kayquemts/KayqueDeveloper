@@ -2,8 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Kayque Mateus</title>
 </head>
 <body>
@@ -12,11 +14,19 @@
         <div id="logo">
             <img src="css/Sem_título-removebg-preview.png" width="240px" />
         </div>
-        <nav class="navegacao"> 
-            <a href="#inicio">INICIO</a>
-            <a href="#sobre-mim">SOBRE MIM</a>
-            <a href="#">HABILIDADES</a>
+        <div class="menu-responsivo">
+            <div id="linha1"></div>
+            <div id="linha2"></div>
+            <div id="linha3"></div>
+        </div>
+        <nav class="">
+            <ul class="navegacao">
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sobre-mim">SOBRE MIM</a></li>
+                <li><a href="#">HABILIDADES</a></li>
+            </ul>
         </nav>
+        
     </header>
 
     <div class="inicio" id="inicio">
@@ -45,8 +55,11 @@
             <div id="img-sobre-mim">
                 <img src="https://static.printler.com/cache/9/2/4/1/6/d/92416d821406bf8fb00abcf5c53d90745bbade11.jpg" width="350px">
             </div>
+
+            <br/>
+
             <div id="texto-sobre-mim"> 
-                <h1>Sobre mim</h1>
+                <h1>SOBRE MIM</h1>
                 <p>
                     Olá! Meu nome é Kayque Mateus e sou um estudante dedicado de Ciência da Computação
                      com uma paixão ardente pelo mundo da tecnologia e desenvolvimento. Desde o momento 
