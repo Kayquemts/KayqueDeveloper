@@ -24,6 +24,12 @@ header{
     border-bottom: 1px solid #353535;
     z-index: 2;
 }
+#section{
+    width: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .navegacao{
     list-style: none;
     display: flex;
@@ -65,7 +71,7 @@ nav{
     width: 100%;
 }
 /* apresentação */
-.inicio, .sobre-mim{
+.inicio, .sobre-mim, .habilidade{
     width: 100vmax;
     display: flex;
     justify-content: center; 
@@ -189,20 +195,6 @@ p{
     justify-content: end;
     margin-right: 5rem;
 }
-/*.contato{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    border: 1px solid #00ccc1;
-    width: 200px;
-    height: 50px;
-    color: #00ccc1;
-    margin: 1rem;
-}*/
-
 .contato{
     position: relative;
     color: #00ccc1;
@@ -276,4 +268,47 @@ p{
 .color--four {
   background-color: #ffffff;
   transition-delay: 1s;
+}
+/* Habilidades */
+.habilidade{
+    background-color: #272727;
+}
+.skill-cards{
+    margin-top: 5%;
+}
+.cards{
+    display: flex;
+    width: 180px;
+    justify-content: start;
+    align-items: center;
+    padding: 0.5em 2em;
+    background-color: aliceblue;
+    border-radius: 5px;
+    
+}
+.cards p{
+    font-size: 30px;
+    color: #121212;
+}
+.cards:not(:first-child){
+    margin-left: 30px;
+}
+#verificado{
+    width: 30px;
+    margin-right: 10px;
+}
+.skill-cards-line1, .skill-cards-line2, .skill-cards-line3{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@keyframes dash {
+    from{
+        transform: translateY(0px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateY(-100px);
+        opacity: 100%;
+    }
 }

@@ -10,7 +10,7 @@
     display: none;
     right: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 600px) {
     .inicio{
         display: unset;
     }
@@ -33,29 +33,37 @@
     }
     header{
         width: 100%;
-    }/*
-    .navegacao{
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background-color: #1f1f1f;
-        margin-right: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-    }*/
+    }
     .navegacao li{
         margin-left: 0;
-        opacity: 0;
     }
     .menu-responsivo{
         display: block;
     }
     .active{
-        transform: translateX(0);
+        display: unset;
+        height: 30%;
+        align-items: start;
+        justify-content: center;
+    }
+    .active nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .active .navegacao{
+        display: unset;
+        text-align: center;
+        margin-right: 0;
+    }
+    .active li{
+        margin: 30px 0;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .container-scroll{
         width: unset;
@@ -105,7 +113,35 @@
         margin: unset;
     }
     h1{
-        font-size: 60px;
+        font-size: 45px;
     }
+
+    /*Habilidade*/
+    .habilidade, .container-habilidade{
+        width: 100%;
+    }
+    .habilidade p{
+        font-size: 20px;
+    }
+    
+    .skill-cards-line1, .skill-cards-line2{
+        display: unset;
+        margin-bottom: -1em;
+    }
+    .cards{
+        margin: 1em 0em;
+    }
+    .cards:not(:first-child) {
+        margin-left: 0px;
+    }
+    .skill-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        text-align: center;
+    }
+    
+    
 }
-/*video youtube*/

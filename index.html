@@ -11,19 +11,21 @@
 <body>
 
     <header id="barra-navegacao">
-        <div id="logo">
-            <img src="css/Sem_título-removebg-preview.png" width="240px" />
+        <div class="container">
+            <div id="logo">
+                <img src="css/Sem_título-removebg-preview.png" width="240px" />
+            </div>
+            <div class="menu-responsivo">
+                <div id="linha1"></div>
+                <div id="linha2"></div>
+                <div id="linha3"></div>
+            </div>
         </div>
-        <div class="menu-responsivo">
-            <div id="linha1"></div>
-            <div id="linha2"></div>
-            <div id="linha3"></div>
-        </div>
-        <nav class="">
+        <nav>
             <ul class="navegacao">
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#sobre-mim">SOBRE MIM</a></li>
-                <li><a href="#">HABILIDADES</a></li>
+                <li><a href="#inicio" id="linha-inicio">INICIO</a></li>
+                <li><a href="#sobre-mim" id="linha-sobremim">SOBRE MIM</a></li>
+                <li><a href="#habilidade" id="linha-habilidades">HABILIDADES</a></li>
             </ul>
         </nav>
         
@@ -53,7 +55,7 @@
     <div class="sobre-mim" id="sobre-mim">
         <div class="container-sobre-mim"> 
             <div id="img-sobre-mim">
-                <img src="https://static.printler.com/cache/9/2/4/1/6/d/92416d821406bf8fb00abcf5c53d90745bbade11.jpg" width="350px">
+                <img src="css/image (4).png" height="500px">
             </div>
 
             <br/>
@@ -86,7 +88,32 @@
         </div>
         
     </div>
-
+    <div class="habilidade" id="habilidade">
+        <div class="container-habilidade">
+            <div class="title">
+                <h1>Habilidades</h1>
+                <p>Aqui estão as linguagens, habilidades e tecnologias com as quais tenho contato.</p>
+            </div>
+    
+            <div class="skill-cards">
+                <div class="skill-cards-line1">
+                    <div class="cards"><img id="verificado" src="css/verificado.png" > <p> Html </p></div>
+                    <div class="cards"><img id="verificado" src="css/verificado.png" > <p> CSS </p></div>
+                    <div class="cards"><img id="verificado" src="css/verificado.png"> <p> JavaScript </p></div>
+                    <div class="cards"><img id="verificado" src="css/verificado.png"> <p> Jquery </p></div>
+                    <div class="cards"><img id="verificado" src="css/verificado.png"> <p> Bootstrap </p></div>
+                </div>
+                <div class="skill-cards-line2"> 
+                    <div class="cards"><img id="verificado" src="css/verificado.png"> <p> Git</p></div>
+                    <div class="cards"><img id="verificado" src="css/verificado.png"> <p> Github </p></div>
+                    <div class="cards"><img id="verificado" src="css/verificado.png"> <p> Mysql </p></div>
+                    <div class="cards"><img id="verificado" src="css/verificado.png"> <p> Scrum </p></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>
