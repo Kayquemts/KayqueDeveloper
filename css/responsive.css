@@ -26,7 +26,7 @@
         width: 100%;
     }
     #nome{
-        font-size: 45px;
+        font-size: 40px;
     }
     #img-apresentacao{
         display: none;
@@ -42,11 +42,12 @@
     }
     .active{
         display: unset;
-        height: 30%;
+        height: 32%;
         align-items: start;
         justify-content: center;
     }
     .active nav{
+        height: calc(100% - 5rem);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -57,7 +58,10 @@
         margin-right: 0;
     }
     .active li{
-        margin: 30px 0;
+        /*margin: 30px 0;*/
+    }
+    .active li:not(:first-of-type){
+        margin: 3vh 0;
     }
     .container{
         width: 100%;
@@ -79,7 +83,7 @@
         from{
             width: 0;
         }to{
-            width: 400px;
+            width: 355px;
         }
     }
 
@@ -142,6 +146,12 @@
     .title{
         text-align: center;
     }
-    
-    
+}
+@media (max-height: 620px){
+    .active li:not(:first-of-type){
+        margin: 2vh 0;
+    }
+    .active a{
+        font-size: 18px;
+    }
 }
